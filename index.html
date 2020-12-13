@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+  <head>
+  <title>New Tab</title>
+  
+
+  <style>
+    html {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font: 22px "Courier New", Courier, monospace;
+      height: 100%;
+      justify-content: center;
+      margin: 0;
+      background-color: #BDE6D6;
+    }
+
+    body {
+      display: flex;
+      margin: 1em;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 2em;
+      grid-column: 1 / -1;
+      margin: 0;
+      text-align: center;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #FFA8AE;
+    }
+
+    nav {
+      display: grid;
+      grid-row-gap: 0.7em;
+      grid-template-columns: 0.6fr 0.6fr 0.6fr;
+      margin: 0 0.1em;
+      min-width: 24em;
+      padding: 0.5em 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    li:first-child {
+      font-weight: bold;
+      line-height: 2em;
+    }
+
+    img {
+      border: 2px solid #FFD2CF;
+      height: auto;
+      object-fit: cover;
+      object-position: 80% 100%;
+      width: 8em;
+      padding: 0;
+      margin: 0;
+    }
+
+    form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    }
+
+    form label {
+        color: var(--primary-color);
+        padding: 0 .1rem;
+    }
+
+    form input {
+        background: inherit;
+        border: none;
+        font: inherit;
+        width: 100%;
+        color: white;
+    }
+
+    form input:focus {
+        outline: none;
+    }  
+
+    form input::placeholder {
+        opacity: 1;
+        color: white;
+    }
+
+    form:focus-within input::placeholder {
+        opacity: 0;
+    }
+
+  </style>
+  </head>
+  <body>
+
+  <nav>
+    <h1>人生は一度だけ</h1>
+    <h1 id="datetime"></h1>
+    <ul>
+      <li>General</li>
+      <li><a href="https://gmail.com">Gmail</a></li>
+      <li><a href="https://drive.google.com">Drive</a></li>
+      <li><a href="https://photos.google.com">Photos</a></li>
+    </ul>
+    <ul>
+      <li>Social</li>
+      <li><a href="https://Discord.com/app">Discord</a></li>
+      <li><a href="https://Quora.com">Quora</a></li>
+      <li><a href="https://instagram.com">Instagram</a></li>
+    </ul>
+    <ul>
+      <li>Entertainment</li>
+      <li><a href="https://animelon.com/">Animelon</a></li>
+      <li><a href="https://youtube.com/">Youtube</a></li>
+    </ul>
+    <form action="https://startpage.com/sp/search/" method="GET">
+      <label for="q">>>>   </label>
+      <input name="q" type="search" placeholder="Type to search the web..." />
+    </form>
+  </nav>
+
+  <img src="desktop_3.jpg">
+  <script src="datetime.js"></script>
+  </body>
+</html>
+
